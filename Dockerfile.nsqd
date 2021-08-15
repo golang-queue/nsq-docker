@@ -1,0 +1,6 @@
+FROM nsqio/nsq
+
+EXPOSE 4150/tcp
+EXPOSE 4151/tcp
+
+ENTRYPOINT ["/nsqd"]
