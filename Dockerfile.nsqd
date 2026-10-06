@@ -1,5 +1,9 @@
 FROM nsqio/nsq
 
+RUN chown 65532:65532 /data
+WORKDIR /data
+USER 65532:65532
+
 EXPOSE 4150/tcp
 EXPOSE 4151/tcp
 
